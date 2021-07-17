@@ -4,25 +4,6 @@ class QemuHvf < Formula
   license "GPL-2.0-only"
   head "https://git.qemu.org/git/qemu.git"
 
-  stable do
-    url "https://download.qemu.org/qemu-6.0.0.tar.xz"
-    sha256 "87bc1a471ca24b97e7005711066007d443423d19aacda3d442558ae032fa30b9"
-
-    # remove in next release
-    patch do
-      url "https://git.qemu.org/?p=qemu.git;a=patch;h=75eebe0b1f15464d19a39c4186bfabf328ab601a"
-      sha256 "9f4db8c6f80f4a87baf1b778fea62bbad89db9db5fd47548c2d22e5475edd910"
-    end
-  end
-
-  bottle do
-    sha256 arm64_big_sur: "3fcae0fc1d2a2f93fb2822fbed398b34170b0c142fadebc149e27988e68bcf3e"
-    sha256 big_sur:       "93b55db46955010ccb2e017bad0b5bcd6cfb663261271fcead604ebfc008a445"
-    sha256 catalina:      "936594517984109e17548df23a38eab142df9d9f2aba2b73db5fc1154d7a2a81"
-    sha256 mojave:        "77413fd07a33641ecaf46a41dd04895d75c0f2cd6e12a9722afa5cecce209b53"
-    sha256 x86_64_linux:  "4794ac6d16b2995b6ba064b20c0ee63df5d51fcc19c0df2b9f89374fad37f1f9"
-  end
-
   depends_on "libtool" => :build
   depends_on "meson" => :build
   depends_on "ninja" => :build
