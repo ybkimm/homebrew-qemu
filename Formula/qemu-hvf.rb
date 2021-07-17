@@ -1,4 +1,4 @@
-class Qemu < Formula
+class QemuHvf < Formula
   desc "Emulator for x86 and PowerPC"
   homepage "https://www.qemu.org/"
   license "GPL-2.0-only"
