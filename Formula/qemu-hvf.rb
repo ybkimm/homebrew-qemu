@@ -2,7 +2,7 @@ class QemuHvf < Formula
   desc "Emulator for x86 and PowerPC"
   homepage "https://www.qemu.org/"
   license "GPL-2.0-only"
-  head "https://git.qemu.org/git/qemu.git"
+  head "https://github.com/ybkimm/qemu/qemu.git"
 
   depends_on "libtool" => :build
   depends_on "meson" => :build
